@@ -10,7 +10,6 @@ public class Food extends Rectangle{
     private int foodPosX;
     private int foodPosY;
 
-
     public Food(){
         food = new Rectangle(20,20, Color.YELLOW);
         food.setFill(Color.YELLOW);
@@ -23,6 +22,16 @@ public class Food extends Rectangle{
 //
 //        }
 //    }
+
+    public int getFoodPosX(){
+        foodPosX = (int) (Math.random() * Parameters.row_count);
+        return foodPosX;
+    }
+
+    public int getFoodPosY(){
+        foodPosY = (int) (Math.random() * Parameters.col_count);
+        return foodPosY;
+    }
 
     public Rectangle getFood() {
         return food;

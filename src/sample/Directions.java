@@ -6,3 +6,7 @@ public enum Directions {
     RIGHT,
     LEFT
 }
+//
+//static Directions getDirection(){
+//    return
+//}
